@@ -1,0 +1,126 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgb(34, 34, 34);
+}
+
+header{
+    padding: 20px 20px;
+}
+
+.container-grid-contact{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.container-form{
+    padding: 20px 50px
+}
+
+.container-form h1{
+    color: #E6521C;
+    font-size: 45px;
+}
+
+.container-form form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.container-form label{
+    color: white;
+    margin-top: 15px;
+    font-size: 25px;
+}
+
+.container-form input{
+    width: 100%;
+    height: 40px;
+    max-width: 430px;
+    border-radius: 10px;
+    border: none;
+    background-color: lightslategray;
+}
+
+.container-form textarea{
+    width: 100%;
+    height: 80px;
+    max-width: 430px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 15px;
+}
+
+.container-form button{
+   width: 90%;
+   height: 30px;
+   max-width: 430px;
+   margin: 0 auto;
+   background-color: black;
+   color: #E6521C;
+   border: none;
+   font-weight: 700;
+}
+
+.container-info{
+    display: none;
+}
+
+
+@media(min-width: 760px){
+    
+    .container-main-contact{
+        padding: 20px 100px;
+    }
+    
+    .container-grid-contact{
+        grid-template-columns: 3fr 2fr;
+        grid-template-rows: 1fr;
+    }
+
+    .container-form button{
+        margin: 0;
+    }
+
+    .container-info{
+        display: block;
+        background-color: #E6521C;
+        box-shadow: 0 4px 8px rgb(0, 0, 0);
+    }
+    
+    .container-info h2{
+        font-size: 40px;
+    }
+    
+    .container-info{
+        padding: 20px 20px;
+        box-sizing: border-box;
+    }
+    
+    .info{
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    
+    .info img{
+        width: 40px;
+        margin-right: 10px;
+    }
+    
+    .container-links-redes-contact{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: stretch;
+        margin-top: 100px;
+    }
+    
+    .container-links-redes-contact li{
+        list-style: none;
+    }
+    
+    
+    
+}

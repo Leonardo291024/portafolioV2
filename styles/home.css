@@ -1,0 +1,235 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgb(34, 34, 34);
+}
+
+/*---------------ESTILOS HEADER*------------------------*/
+
+header{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 20px;
+}
+
+.header-links-mobile{
+    position: absolute;
+    top: 90px;
+    right: 10px;
+    list-style: none;
+    background-color: black;
+    padding: 20px 15px;
+    border-radius: 10px;
+    display: none;
+}
+
+.header-links-tablet-desktopt{
+    display: none;
+}
+
+.container-links-header li{
+    margin-bottom: 10px;
+}
+
+.container-links-header a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.container-links-header a:hover{
+    color: #E6521C;
+}
+
+/*------------ESTILOS DEL BANNER-----------------*/
+.container-banner{
+    position: relative;
+    padding: 100px 70px;
+    background-color: rgb(19, 19, 19);
+}
+
+.container-banner h3{
+    color: rgb(166, 166, 166);
+    font-size: 50px;
+    height: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    
+}
+
+.container-banner h2{
+    color: white;
+    font-size: 30px;
+    height: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.container-banner h1{
+    color: white;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.container-banner .button-contact{
+    display: inline-flex;
+    margin-top: 20px;
+    background-color: rgb(230, 82, 28);
+    color: white;
+    text-decoration: none;
+    padding: 5px 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.imagen-perfil{
+    position: absolute;
+    top: 375px;
+    left: calc(50% - 70px);
+}
+
+.imagen-perfil img{
+    width: 140px;
+    border-radius: 50%;
+    border: 5px solid white
+}
+
+
+
+/*----------------------SOBRE MI------------*/
+.sobreMi{
+    padding: 50px 20px;
+    background-color: rgb(34, 34, 34);
+}
+
+.sobreMi h1{
+    text-align: center;
+    color: rgb(230, 82, 28);
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.container-sobreMi p{
+    color: white;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    line-height: 30px;
+    text-wrap: balance;
+}
+
+.container-sobreMi strong{
+    color: #E6521C;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.container-sobreMi h2{
+    color: #E6521C;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.container-sobreMi-contacts article{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.container-links-redes{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.container-links-redes li{
+    padding: 5px 5px;
+    border: 1px solid #E6521C;
+    border-radius: 8px;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.container-links-redes li:hover{
+    transform: scale(1.1);
+    background-color: #E6521C;
+}
+
+@media(min-width: 720px) {
+    .menuLogo{
+        display: none;
+    }
+    
+    .header-links-tablet-desktopt{
+        display: flex;
+        list-style: none;
+    }
+    
+    .header-links-tablet-desktopt li{
+        margin-left: 15px;
+    }
+    
+    .header-links-tablet-desktopt a{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        transition: 0.3s;
+    }
+    
+    .header-links-tablet-desktopt a:hover{
+        transform: scale(1.1);
+        color: #E6521C;
+    }
+    
+    /*------------ESTILOS DEL BANNER--------------*/
+    
+    .container-banner h3{
+       
+        font-size: 80px;
+    }
+    
+    .container-banner h2{
+        font-size: 70px;
+    }
+    
+    .container-banner h1{
+        font-size: 70px;
+    }
+    
+    .container-banner .button-contact{
+        padding: 15px 20px;
+    }
+    
+    .imagen-perfil{
+        top: 530px;
+        left: calc(50% - 90px);
+    }
+    
+    .imagen-perfil img{
+        width: 180px;
+    }
+    
+    /*---------------SOBRE MI-----------------*/
+    .sobreMi{
+        padding: 50px 100px;
+    }
+    
+    .sobreMi h1{
+        font-size: 40px;
+    }
+    
+    .container-links-redes{
+        justify-content: center;
+    }
+    
+    
+}
