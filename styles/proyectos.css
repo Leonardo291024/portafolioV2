@@ -20,36 +20,36 @@
     justify-items: center;
 }
 
-.container-cards-grid .card{
+.seccion-proyectos .container-cards-grid .card{
      background-color: rgb(34, 34, 34);
      border-radius: 8px;
      box-shadow: 0 4px 8px rgb(0, 0, 0);
 }
 
-.card h2{
+.container-cards-grid .card h2{
     color: #E6521C;
     font-weight: 400;
 }
 
-.card a{
+.container-cards-grid .card a{
     text-decoration: none;
     background-color: #E6521C;
     padding: 5px 5px;
     color: black;
 }
 
-.card .repositorio{
+.container-cards-grid .card .repositorio{
     border: 1px solid #E6521C;
     color: white;
     background-color: rgb(34, 34, 34);
     margin-right: 10px;
 }
 
-.container-cards-grid img{
+.seccion-proyectos .container-cards-grid img{
     width: 300px;
 }
 
-.card div{
+.container-cards-grid .card div{
     padding: 10px 10px;
 }
 
