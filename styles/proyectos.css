@@ -3,13 +3,17 @@
     padding: 20px 20px;
 }
 
-.seccion-html-css h1{
+.seccion-html-css-js{
+    padding: 20px 20px;
+}
+
+.seccion-proyectos h1{
     text-align: center;
     color: white;
     font-size: 30px;
 }
 
-.seccion-html-css .container-cards-grid{
+.seccion-proyectos .container-cards-grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
@@ -50,7 +54,7 @@
 }
 
 @media (max-width: 768px){
-    .seccion-html-css .container-cards-grid{
+    .seccion-proyectos .container-cards-grid{
         grid-template-columns: repeat(2, 1fr);
         justify-content: center;
         gap: 15px;
@@ -58,7 +62,7 @@
 }
 
 @media (max-width: 480px){
-    .seccion-html-css .container-cards-grid{
+    .seccion-proyectos .container-cards-grid{
         grid-template-columns: 1fr;
         justify-content: center;
         gap: 15px;
