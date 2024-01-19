@@ -1,8 +1,9 @@
 body{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    background-color: rgb(34, 34, 34);
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        background-color: rgb(34, 34, 34);
+        font-family: 'Roboto', sans-serif;
 }
 
 /*---------------ESTILOS HEADER*------------------------*/
@@ -163,6 +164,7 @@ header{
 }
 
 @media(min-width: 720px) {
+
     .menuLogo{
         display: none;
     }
@@ -170,10 +172,11 @@ header{
     .header-links-tablet-desktopt{
         display: flex;
         list-style: none;
+        position: relative;
     }
     
     .header-links-tablet-desktopt li{
-        margin-left: 15px;
+        margin-left: 90px;
     }
     
     .header-links-tablet-desktopt a{
@@ -184,7 +187,12 @@ header{
         font-weight: 400;
         transition: 0.3s;
     }
-    
+
+    .lista-proyectos{
+        
+    }
+
+
     .header-links-tablet-desktopt a:hover{
         transform: scale(1.1);
         color: #E6521C;
