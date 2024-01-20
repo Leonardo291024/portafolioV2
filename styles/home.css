@@ -16,6 +16,10 @@ header{
     padding: 25px 20px;
 }
 
+#menu-mobile{
+    display: none;
+}
+
 .container-link-logo{
     text-decoration: none;
     display: flex;
@@ -32,13 +36,22 @@ header{
 
 .header-links-mobile{
     position: absolute;
-    top: 90px;
-    right: 10px;
+    top: 99px;
+    right: 1px;
+    width: 90%;
     list-style: none;
     background-color: black;
     padding: 20px 15px;
     border-radius: 10px;
-    display: none;
+    display: block;
+}
+
+.header-links-mobile a{
+    text-decoration: none;
+    font-size: 20px;
+    color: orangered;
+    display: inline-block;
+    padding-bottom: 8px;
 }
 
 .header-links-tablet-desktopt{
@@ -62,7 +75,6 @@ header{
 
 /*------------ESTILOS DEL BANNER-----------------*/
 .container-banner{
-    position: relative;
     padding: 100px 70px;
     background-color: rgb(19, 19, 19);
 }
@@ -104,7 +116,7 @@ header{
 
 .imagen-perfil{
     position: absolute;
-    top: 375px;
+    top: 490px;
     left: calc(50% - 70px);
 }
 
@@ -246,7 +258,7 @@ header{
     }
     
     .imagen-perfil{
-        top: 530px;
+        top: 667px;
         left: calc(50% - 90px);
     }
     
