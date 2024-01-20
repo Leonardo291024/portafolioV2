@@ -13,10 +13,11 @@ header{
 .container-grid-contact{
     display: grid;
     grid-template-columns: 1fr;
+    justify-items: center;
 }
 
 .container-form{
-    padding: 20px 50px
+    padding: 20px 30px
 }
 
 .container-form h1{
@@ -73,12 +74,11 @@ header{
 @media(min-width: 760px){
     
     .container-main-contact{
-        padding: 20px 100px;
+        padding: 20px 30px;
     }
     
     .container-grid-contact{
-        grid-template-columns: 3fr 2fr;
-        grid-template-rows: 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
     }
 
     .container-form button{
@@ -89,6 +89,7 @@ header{
         display: block;
         background-color: #E6521C;
         box-shadow: 0 4px 8px rgb(0, 0, 0);
+        max-width: 520px;
     }
     
     .container-info h2{
