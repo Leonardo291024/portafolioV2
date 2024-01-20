@@ -16,6 +16,21 @@ header{
     padding: 25px 20px;
 }
 
+.container-link-logo{
+    text-decoration: none;
+    display: flex;
+    align-items: baseline;
+}
+
+.container-link-logo img{
+    display: none;
+}
+
+.container-link-logo h1{
+    margin-left: 10px;
+    color: orangered;
+}
+
 .header-links-mobile{
     position: absolute;
     top: 90px;
@@ -163,7 +178,12 @@ header{
     background-color: #E6521C;
 }
 
-@media(min-width: 720px) {
+@media(min-width: 768px) {
+
+    .container-link-logo img{
+        display: block;
+    }
+    
 
     .menuLogo{
         display: none;
@@ -171,12 +191,13 @@ header{
     
     .header-links-tablet-desktopt{
         display: flex;
+        flex-wrap: wrap;
         list-style: none;
         position: relative;
     }
     
     .header-links-tablet-desktopt li{
-        margin-left: 90px;
+        margin-left: 60px;
     }
     
     .header-links-tablet-desktopt a{
