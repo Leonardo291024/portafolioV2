@@ -23,12 +23,11 @@ header{
 }
 
 .container-link-logo img{
-    display: none;
+    display: block;
 }
 
 .container-link-logo h1{
-    margin-left: 10px;
-    color: orangered;
+    display: none;
 }
 
 .header-links-mobile{
@@ -181,7 +180,15 @@ header{
 @media(min-width: 768px) {
 
     .container-link-logo img{
+        display: none;
+    }
+
+    .container-link-logo h1{
         display: block;
+        letter-spacing: 3px;
+        font-size: 30px;
+        color: orangered;
+        font-weight: 600;
     }
     
 
