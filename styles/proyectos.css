@@ -1,9 +1,17 @@
+:root{
+    --naranja: #E6521C;
+    --negro-1: rgb(34, 34, 34);
+    --negro-2: rgb(0, 0, 0);
+    --negro-banner: rgb(19, 19, 19);
+    --blanco-1: rgb(255, 255, 255)
+}
+
 #menu-mobile{
     display: none;
 }
 
 .seccion-html-css{
-    background-color: rgb(19, 19, 19);
+    background-color: var(--negro-banner);
     padding: 20px 20px;
 }
 
@@ -13,7 +21,7 @@
 
 .seccion-proyectos h1{
     text-align: center;
-    color: white;
+    color: var(--blanco-1);
     font-size: 30px;
 }
 
@@ -25,27 +33,27 @@
 }
 
 .seccion-proyectos .container-cards-grid .card{
-     background-color: rgb(34, 34, 34);
+     background-color: var(--negro-1);
      border-radius: 8px;
-     box-shadow: 0 4px 8px rgb(0, 0, 0);
+     box-shadow: 0 4px 8px var(--negro-2);
 }
 
 .container-cards-grid .card h2{
-    color: #E6521C;
+    color: var(--naranja);
     font-weight: 400;
 }
 
 .container-cards-grid .card a{
     text-decoration: none;
-    background-color: #E6521C;
+    background-color: var(--naranja);
     padding: 5px 5px;
-    color: black;
+    color: var(--negro-2);
 }
 
 .container-cards-grid .card .repositorio{
-    border: 1px solid #E6521C;
-    color: white;
-    background-color: rgb(34, 34, 34);
+    border: 1px solid var(--naranja);
+    color: var(--blanco-1);
+    background-color: var(--negro-1);
     margin-right: 10px;
 }
 
@@ -56,19 +64,3 @@
 .container-cards-grid .card div{
     padding: 10px 10px;
 }
-
-/*@media (max-width: 768px){
-    .seccion-proyectos .container-cards-grid{
-        grid-template-columns: repeat(2, 1fr);
-        justify-content: center;
-        gap: 15px;
-    }
-}
-
-@media (max-width: 480px){
-    .seccion-proyectos .container-cards-grid{
-        grid-template-columns: 1fr;
-        justify-content: center;
-        gap: 15px;
-    }
-}*/

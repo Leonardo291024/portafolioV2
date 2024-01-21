@@ -1,8 +1,16 @@
+:root{
+    --naranja: #E6521C;
+    --negro-1: rgb(34, 34, 34);
+    --negro-2: rgb(0, 0, 0);
+    --negro-banner: rgb(19, 19, 19);
+    --blanco-1: rgb(255, 255, 255)
+}
+
 body{
         padding: 0;
         margin: 0;
         box-sizing: border-box;
-        background-color: rgb(34, 34, 34);
+        background-color: var(--negro-1);
         font-family: 'Roboto', sans-serif;
 }
 
@@ -40,7 +48,7 @@ header{
     right: 1px;
     width: 90%;
     list-style: none;
-    background-color: black;
+    background-color: var(--negro-1);
     padding: 20px 15px;
     border-radius: 10px;
     display: block;
@@ -49,7 +57,7 @@ header{
 .header-links-mobile a{
     text-decoration: none;
     font-size: 20px;
-    color: orangered;
+    color: var(--naranja);
     display: inline-block;
     padding-bottom: 8px;
 }
@@ -64,19 +72,19 @@ header{
 
 .container-links-header a{
     text-decoration: none;
-    color: white;
+    color: var(--blanco-1);
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
 }
 
 .container-links-header a:hover{
-    color: #E6521C;
+    color: var(--naranja);
 }
 
 /*------------ESTILOS DEL BANNER-----------------*/
 .container-banner{
     padding: 100px 70px;
-    background-color: rgb(19, 19, 19);
+    background-color: var(--negro-banner);
 }
 
 .container-banner h3{
@@ -89,7 +97,7 @@ header{
 }
 
 .container-banner h2{
-    color: white;
+    color: var(--blanco-1);
     font-size: 30px;
     height: 10px;
     font-family: 'Roboto', sans-serif;
@@ -97,7 +105,7 @@ header{
 }
 
 .container-banner h1{
-    color: white;
+    color: var(--blanco-1);
     font-size: 30px;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
@@ -106,8 +114,8 @@ header{
 .container-banner .button-contact{
     display: inline-flex;
     margin-top: 20px;
-    background-color: rgb(230, 82, 28);
-    color: white;
+    background-color: var(--naranja);
+    color: var(--blanco-1);
     text-decoration: none;
     padding: 5px 5px;
     font-family: 'Roboto', sans-serif;
@@ -123,7 +131,7 @@ header{
 .imagen-perfil img{
     width: 140px;
     border-radius: 50%;
-    border: 5px solid white
+    border: 5px solid var(--blanco-1)
 }
 
 
@@ -131,19 +139,19 @@ header{
 /*----------------------SOBRE MI------------*/
 .sobreMi{
     padding: 50px 20px;
-    background-color: rgb(34, 34, 34);
+    background-color: var(--negro-1);
 }
 
 .sobreMi h1{
     text-align: center;
-    color: rgb(230, 82, 28);
+    color: var(--naranja);
     font-size: 30px;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
 }
 
 .container-sobreMi p{
-    color: white;
+    color: var(--blanco-1);
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
@@ -152,13 +160,13 @@ header{
 }
 
 .container-sobreMi strong{
-    color: #E6521C;
+    color: var(--naranja);
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
 }
 
 .container-sobreMi h2{
-    color: #E6521C;
+    color: var(--naranja);
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -170,6 +178,18 @@ header{
     text-align: center;
 }
 
+.skills h1{
+    color: var(--blanco-1);
+}
+
+.skills div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
 .container-links-redes{
     display: flex;
     justify-content: center;
@@ -178,7 +198,7 @@ header{
 
 .container-links-redes li{
     padding: 5px 5px;
-    border: 1px solid #E6521C;
+    border: 1px solid var(--naranja);
     border-radius: 8px;
     margin-right: 10px;
     transition: 0.3s;
@@ -186,7 +206,7 @@ header{
 
 .container-links-redes li:hover{
     transform: scale(1.1);
-    background-color: #E6521C;
+    background-color: var(--naranja);
 }
 
 @media(min-width: 768px) {
@@ -199,7 +219,7 @@ header{
         display: block;
         letter-spacing: 3px;
         font-size: 30px;
-        color: orangered;
+        color: var(--naranja);
         font-weight: 600;
     }
     
@@ -221,21 +241,16 @@ header{
     
     .header-links-tablet-desktopt a{
         text-decoration: none;
-        color: white;
+        color: var(--blanco-1);
         font-size: 20px;
         font-family: 'Roboto', sans-serif;
         font-weight: 400;
         transition: 0.3s;
     }
 
-    .lista-proyectos{
-        
-    }
-
-
     .header-links-tablet-desktopt a:hover{
         transform: scale(1.1);
-        color: #E6521C;
+        color: var(--naranja);
     }
     
     /*------------ESTILOS DEL BANNER--------------*/

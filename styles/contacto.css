@@ -1,8 +1,16 @@
+:root{
+    --naranja: #E6521C;
+    --negro-1: rgb(34, 34, 34);
+    --negro-2: rgb(0, 0, 0);
+    --negro-banner: rgb(19, 19, 19);
+    --blanco-1: rgb(255, 255, 255)
+}
+
 body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: rgb(34, 34, 34);
+    background-color: var(--negro-1);
     font-family: 'Roboto', sans-serif;
 }
 
@@ -21,7 +29,7 @@ header{
 }
 
 .container-form h1{
-    color: #E6521C;
+    color: var(--naranja);
     font-size: 45px;
 }
 
@@ -32,7 +40,7 @@ header{
 }
 
 .container-form label{
-    color: white;
+    color: var(--blanco-1);
     margin-top: 15px;
     font-size: 25px;
 }
@@ -60,8 +68,8 @@ header{
    height: 30px;
    max-width: 430px;
    margin: 0 auto;
-   background-color: black;
-   color: #E6521C;
+   background-color: var(--negro-2);
+   color: var(--naranja);
    border: none;
    font-weight: 700;
 }
@@ -87,8 +95,8 @@ header{
 
     .container-info{
         display: block;
-        background-color: #E6521C;
-        box-shadow: 0 4px 8px rgb(0, 0, 0);
+        background-color: var(--naranja);
+        box-shadow: 0 4px 8px var(--negro-2);
         max-width: 520px;
     }
     
