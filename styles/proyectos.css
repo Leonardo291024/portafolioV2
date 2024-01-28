@@ -64,3 +64,7 @@
 .container-cards-grid .card div{
     padding: 10px 10px;
 }
+
+.card .container-icons img{
+    width: 48px;
+}
