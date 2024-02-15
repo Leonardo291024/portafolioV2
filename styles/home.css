@@ -120,6 +120,13 @@ header{
     padding: 5px 5px;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
+    transition: 0.3s;
+}
+
+.container-banner .button-contact:hover{
+    background-color: white;
+    color: var(--naranja);
+    transform: scale(1.1);
 }
 
 .imagen-perfil{
@@ -191,20 +198,21 @@ header{
 }
 
 .container-links-redes{
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
     list-style: none;
+    padding-top: 30px;
 }
 
-.container-links-redes li{
+.container-links-redes a{
     padding: 5px 5px;
     border: 1px solid var(--naranja);
     border-radius: 8px;
-    margin-right: 10px;
     transition: 0.3s;
 }
 
-.container-links-redes li:hover{
+.container-links-redes a:hover{
     transform: scale(1.1);
     background-color: var(--naranja);
 }
