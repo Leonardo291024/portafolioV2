@@ -12,7 +12,15 @@
 </article-->*/
 const cardsContainerHtmlCss = document.querySelector('.container-cards-grid');
 const proyectosHtmlCssList = [];
-
+proyectosHtmlCssList.push({
+    name: "Calculadora de propinas",
+    image: './assets/calculadoraDePropinas.jpg',
+    web: 'https://leonardo291024.github.io/calculadora_de_propinas/',
+    repositorio: 'https://github.com/Leonardo291024/calculadora_de_propinas',
+    iconoHtml: './assets/icons8-html-48.png',
+    iconoCss: './assets/icons8-css-48.png',
+    iconoJs: './assets/icons8-javascript-48.png'
+});
 proyectosHtmlCssList.push({
     name: "Appeperia",
     image: './assets/apeperia.png',
