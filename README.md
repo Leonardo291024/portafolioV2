@@ -12,3 +12,4 @@
 # Link del sitio web
 **https://leonardo291024.github.io/portafolioV2/**
 
+![Portada](./assets/portafolio.jpg)
