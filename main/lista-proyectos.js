@@ -13,6 +13,15 @@
 const cardsContainerHtmlCss = document.querySelector('.container-cards-grid');
 const proyectosHtmlCssList = [];
 proyectosHtmlCssList.push({
+    name: "Salario Bruto a Salario Neto",
+    image: './assets/salarioBrutojpg.jpg',
+    web: 'https://leonardo291024.github.io/sueldo_bruto_a_neto/',
+    repositorio: 'https://github.com/Leonardo291024/sueldo_bruto_a_neto',
+    iconoHtml: './assets/icons8-html-48.png',
+    iconoCss: './assets/icons8-css-48.png',
+    iconoJs: './assets/icons8-javascript-48.png'
+});
+proyectosHtmlCssList.push({
     name: "Calculadora de propinas",
     image: './assets/calculadoraDePropinas.jpg',
     web: 'https://leonardo291024.github.io/calculadora_de_propinas/',
