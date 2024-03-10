@@ -14,6 +14,13 @@ body{
         font-family: 'Roboto', sans-serif;
 }
 
+ul{
+    list-style: none;
+}
+
+.inactive{
+    display: none;
+}
 /*---------------ESTILOS HEADER*------------------------*/
 
 header{
@@ -24,10 +31,6 @@ header{
     padding: 25px 20px;
 }
 
-#menu-mobile{
-    display: none;
-}
-
 .container-link-logo{
     text-decoration: none;
     display: flex;
@@ -36,25 +39,39 @@ header{
 
 .container-link-logo img{
     display: block;
+    width: 50px;
 }
 
 .container-link-logo h1{
     display: none;
 }
 
-.header-links-mobile{
+.container-menuMobile{
     position: absolute;
-    top: 99px;
-    right: 1px;
-    width: 90%;
+    top: 0;
+    right: 0;
+    width: 100%;
     list-style: none;
     background-color: var(--negro-1);
-    padding: 20px 15px;
     border-radius: 10px;
-    display: block;
 }
 
-.header-links-mobile a{
+.container-menuMobile .containerLogoCerrar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px 0px 5px;
+}
+
+
+.container-menuMobile .containerLogoCerrar img{
+    width: 30px;
+}
+
+.container-menuMobile .containerLogoCerrar h1{
+    color: white;
+}
+.container-menuMobile ul li a{
     text-decoration: none;
     font-size: 20px;
     color: var(--naranja);
@@ -64,6 +81,10 @@ header{
 
 .header-links-tablet-desktopt{
     display: none;
+}
+
+.menuLogo{
+    width: 40px;
 }
 
 .container-links-header li{
@@ -218,6 +239,12 @@ header{
 }
 
 @media(min-width: 768px) {
+    .inactive{
+        display: none;
+    }
+    .container-menuMobile{
+        display: none;
+    }
 
     .container-link-logo img{
         display: none;

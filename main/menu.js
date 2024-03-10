@@ -1,10 +1,14 @@
-const menuIcon = document.getElementById('logo-menu');
-const menu = document.getElementById('menu-mobile');
+const logoMenu = document.querySelector('.menuLogo');
+const logoCerrar = document.querySelector('.logo-cerrar');
+const menuMobile = document.querySelector('.container-menuMobile');
 
-menuIcon.addEventListener('click', function(){
-    if(menu.style.display === "none" || menu.style.display === ""){
-        menu.style.display = "block";
-    }else{
-        menu.style.display = "none"
-    }
-})
+logoMenu.addEventListener('click', abrirMenuMobile);
+logoCerrar.addEventListener('click', cerrarMenuMobile);
+
+function abrirMenuMobile(){
+    menuMobile.classList.remove('inactive');
+}
+
+function cerrarMenuMobile(){
+    menuMobile.classList.add('inactive');
+}
