@@ -64,7 +64,7 @@ header{
 }
 
 
-.container-menuMobile .containerLogoCerrar img{
+.container-menuMobile .containerLogoCerrar .logo-cerrar{
     width: 30px;
 }
 
