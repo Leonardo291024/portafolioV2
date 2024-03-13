@@ -1,4 +1,5 @@
 /*<!--article class="card">
+
     <img src="./assets/apeperia.png" alt="appeperia">
         <div>
             <h2>Appeperia</h2>
@@ -10,11 +11,12 @@
         <a href="https://leonardo291024.github.io/Apeperia/">Sitio web</a>
         </div>
 </article-->*/
-const cardsContainerHtmlCss = document.querySelector('.container-cards-grid');
+
 const proyectosHtmlCssList = [];
 proyectosHtmlCssList.push({
     name: "Salario Bruto a Salario Neto",
     image: './assets/salarioBrutojpg.jpg',
+    readme: "Bienvenido a este sitio para obtener el salario neto de un empleado a partir de el salario bruto Este proyecto es realizado con base a los temas vistos en el curso de Platzi de la escuela de Desarrollo web (Taller de matematicas y estadistica basica con javascript) donde se vieron temas como traducir formulas matematicas a codigo JS y tambien la manipulacion de objetos y arrays",
     web: 'https://leonardo291024.github.io/sueldo_bruto_a_neto/',
     repositorio: 'https://github.com/Leonardo291024/sueldo_bruto_a_neto',
     iconoHtml: './assets/icons8-html-48.png',
@@ -24,6 +26,7 @@ proyectosHtmlCssList.push({
 proyectosHtmlCssList.push({
     name: "Calculadora de propinas",
     image: './assets/calculadoraDePropinas.jpg',
+    readme: "Este es un desafio creado gracias a los desafios de Frontend Mentor. El cual consiste es probar mis habilidades con CSS, HTML JavaScript. Este desafío se centra principalmente en Calcular la propina correcta y el coste total de la factura por persona.Tambien podras ver el comportamiento del sitio en distintos dispositivos ya que es un diseño responsive",
     web: 'https://leonardo291024.github.io/calculadora_de_propinas/',
     repositorio: 'https://github.com/Leonardo291024/calculadora_de_propinas',
     iconoHtml: './assets/icons8-html-48.png',
@@ -33,6 +36,7 @@ proyectosHtmlCssList.push({
 proyectosHtmlCssList.push({
     name: "Appeperia",
     image: './assets/apeperia.png',
+    readme: "pagina web estatica. Practica del curso de Alura Latam/FrontEnd/Grupo5",
     web: 'https://leonardo291024.github.io/Apeperia/',
     repositorio: 'https://github.com/Leonardo291024/Apeperia',
     iconoHtml: './assets/icons8-html-48.png',
@@ -42,6 +46,7 @@ proyectosHtmlCssList.push({
 proyectosHtmlCssList.push({
     name: "BatataBit",
     image: './assets/batataBit.png',
+    readme: "Proyecto de la escuela de desarrollo web del curso de responsive designe",
     web: 'https://leonardo291024.github.io/Bata-Bit/',
     repositorio: 'https://github.com/Leonardo291024/Bata-Bit',
     iconoHtml: './assets/icons8-html-48.png',
@@ -51,6 +56,7 @@ proyectosHtmlCssList.push({
 proyectosHtmlCssList.push({
     name: "Uber",
     image: './assets/proyecto-uber.jpg',
+    readme: "En este proyecto elabore la copia de la landing page de uber para fines parcticos con tecnologias como HTML y CSS. Consitio en realizar el diseño casi exacto de la web original",
     web: 'https://leonardo291024.github.io/landing-page-uber/',
     repositorio: 'https://github.com/Leonardo291024/landing-page-uber',
     iconoHtml: './assets/icons8-html-48.png',
@@ -60,6 +66,7 @@ proyectosHtmlCssList.push({
 proyectosHtmlCssList.push({
     name: "Encriptador De Texto",
     image: './assets/encriptador.png',
+    readme: "Esta es una aplicacion donde podras encriptar mensajes y los podras intercanviar con otras personas que sepan el secreto de la encriptacion utilizada.",
     web: 'https://leonardo291024.github.io/textoEncriptador/',
     repositorio: 'https://github.com/Leonardo291024/textoEncriptador',
     iconoHtml: './assets/icons8-html-48.png',
@@ -69,6 +76,7 @@ proyectosHtmlCssList.push({
 proyectosHtmlCssList.push({
     name: "Calculadora",
     image: './assets/calculadora.jpg',
+    readme: "Este proyecto consiste en una calculadora basica programada con JavaScript asi como tambien el uso de HTML y CSS.",
     web: 'https://leonardo291024.github.io/calculadora/',
     repositorio: 'https://github.com/Leonardo291024/calculadora',
     iconoHtml: './assets/icons8-html-48.png',
@@ -78,65 +86,10 @@ proyectosHtmlCssList.push({
 proyectosHtmlCssList.push({
     name: "E-comerce",
     image: './assets/tienda-empeno.jpg',
+    readme: "Proyecto personal de un sitio web sobre una casa de empeño",
     web: 'https://leonardo291024.github.io/casa-de-empe-o/',
     repositorio: 'https://github.com/Leonardo291024/casa-de-empe-o',
     iconoHtml: './assets/icons8-html-48.png',
     iconoCss: './assets/icons8-css-48.png',
     iconoJs: './assets/icons8-javascript-48.png'
 });
-
-function renderProyects(arr){
-    for(proyect of arr){
-        const proyectCard = document.createElement('article');
-        proyectCard.classList.add('card');
-
-        const proyectImage = document.createElement('img');
-        proyectImage.setAttribute('src', proyect.image);
-
-        const proyectInfo = document.createElement('div');
-
-        const titleProyect = document.createElement('h2');
-        titleProyect.innerText = proyect.name;
-
-        const containerIcons = document.createElement('div');
-        containerIcons.classList.add('container-icons');
-
-        const iconHtml = document.createElement('img');
-        iconHtml.setAttribute('src', proyect.iconoHtml);
-
-        const iconCss = document.createElement('img');
-        iconCss.setAttribute('src', proyect.iconoCss);
-
-        const iconJs = document.createElement('img');
-        iconJs.setAttribute('src', proyect.iconoJs);
-
-        const btnRepositorio = document.createElement('a');
-        btnRepositorio.setAttribute('href' ,proyect.repositorio);
-        btnRepositorio.classList.add('repositorio');
-        btnRepositorio.innerText = "Repositorio";
-
-        const btnSitioWeb = document.createElement('a');
-        btnSitioWeb.setAttribute('href', proyect.web);
-        btnSitioWeb.innerText = "Sitio Web";
-
-        proyectCard.appendChild(proyectImage);
-        proyectCard.appendChild(proyectInfo);
-
-        proyectInfo.appendChild(titleProyect);
-        proyectInfo.appendChild(containerIcons);
-
-        containerIcons.appendChild(iconCss);
-        containerIcons.appendChild(iconHtml);
-        containerIcons.appendChild(iconJs);
-
-        proyectInfo.appendChild(btnRepositorio);
-        proyectInfo.appendChild(btnSitioWeb);
-
-        
-
-        cardsContainerHtmlCss.appendChild(proyectCard);
-
-    }
-}
-
-renderProyects(proyectosHtmlCssList);
