@@ -14,6 +14,16 @@
 
 const proyectosHtmlCssList = [];
 proyectosHtmlCssList.push({
+    name: "To Do List",
+    image: './assets/todoListjpg.jpg',
+    readme: "Agrega tareas automaticamente con la opcion de poder borrar una ves que una de las tareas la hayas completado.",
+    web: 'https://leonardo291024.github.io/TodoList/',
+    repositorio: 'https://github.com/Leonardo291024/TodoList',
+    iconoHtml: './assets/icons8-html-48.png',
+    iconoCss: './assets/icons8-css-48.png',
+    iconoJs: './assets/icons8-javascript-48.png'
+});
+proyectosHtmlCssList.push({
     name: "Salario Bruto a Salario Neto",
     image: './assets/salarioBrutojpg.jpg',
     readme: "Bienvenido a este sitio para obtener el salario neto de un empleado a partir de el salario bruto Este proyecto es realizado con base a los temas vistos en el curso de Platzi de la escuela de Desarrollo web (Taller de matematicas y estadistica basica con javascript) donde se vieron temas como traducir formulas matematicas a codigo JS y tambien la manipulacion de objetos y arrays",
