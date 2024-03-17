@@ -1,8 +1,8 @@
 :root{
     --naranja: #E6521C;
-    --negro-1: rgb(34, 34, 34);
+    --negro-1: #000524;
     --negro-2: rgb(0, 0, 0);
-    --negro-banner: rgb(19, 19, 19);
+    --negro-banner: #020f59;
     --blanco-1: rgb(255, 255, 255)
 }
 
@@ -104,6 +104,10 @@ header{
 
 /*------------ESTILOS DEL BANNER-----------------*/
 .container-banner{
+    background-image: url("../assets/espacio.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 100px 70px;
     background-color: var(--negro-banner);
 }
@@ -166,7 +170,7 @@ header{
 
 /*----------------------SOBRE MI------------*/
 .sobreMi{
-    padding: 50px 20px;
+    padding: 86px 20px;
     background-color: var(--negro-1);
 }
 
