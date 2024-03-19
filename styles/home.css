@@ -22,9 +22,16 @@ ul{
     display: none;
 }
 /*---------------ESTILOS HEADER*------------------------*/
+.baner{
+    background-image: url("../assets/planeta-fondo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
 
 header{
-    position: relative;
+    /*position: relative;*/
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -104,12 +111,7 @@ header{
 
 /*------------ESTILOS DEL BANNER-----------------*/
 .container-banner{
-    background-image: url("../assets/espacio.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     padding: 100px 70px;
-    background-color: var(--negro-banner);
 }
 
 .container-banner h3{
@@ -156,7 +158,7 @@ header{
 
 .imagen-perfil{
     position: absolute;
-    top: 490px;
+    top: 406px;
     left: calc(50% - 70px);
 }
 
@@ -170,7 +172,7 @@ header{
 
 /*----------------------SOBRE MI------------*/
 .sobreMi{
-    padding: 86px 20px;
+    padding: 63px 20px;
     background-color: var(--negro-1);
 }
 
@@ -312,7 +314,7 @@ header{
     }
     
     .imagen-perfil{
-        top: 667px;
+        top: 520px;
         left: calc(50% - 90px);
     }
     
