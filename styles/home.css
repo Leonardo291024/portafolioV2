@@ -131,6 +131,19 @@ header{
     font-weight: 500;
 }
 
+#parpadeo{
+    animation: parpadeo 0.3s infinite alternate;
+}
+@keyframes parpadeo {
+        0%{
+            opacity: 1;
+        }
+
+        100%{
+            opacity: 0;
+        }
+}
+
 .container-banner h1{
     color: var(--blanco-1);
     font-size: 30px;
