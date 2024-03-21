@@ -9,7 +9,7 @@
 
 
 .seccion-html-css{
-    background-color: var(--negro-banner);
+    background-image: linear-gradient(45deg, var(--negro-1) var(--negro-banner));
     padding: 20px 20px;
 }
 

@@ -28,7 +28,9 @@ ul{
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    mask-image: linear-gradient(black 80%, transparent);
 }
+
 
 header{
     /*position: relative;*/
