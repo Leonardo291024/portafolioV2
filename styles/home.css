@@ -186,6 +186,34 @@ header{
 
 
 /*----------------------SOBRE MI------------*/
+main{
+    position: static;
+    /*width: 100%;*/
+    /*height: 100%;*/
+    z-index: -1;
+}
+
+main::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 20%;
+  width: 8px;
+  height: 8px;
+  background: transparent;
+  box-shadow: 200px 200px white, 100px 300px white, 400px 100px white, 600px 300px white, 800px 200px white, 700px 500px white, 500px 600px white, 300px 700px white, 100px 800px white;
+  animation: animateStars 10s linear infinite;
+  border-radius: 50%;
+}
+
+@keyframes animateStars {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-1000px);
+    }
+}
 .sobreMi{
     padding: 63px 20px;
     background-color: var(--negro-1);
@@ -257,6 +285,16 @@ header{
 .container-links-redes a:hover{
     transform: scale(1.1);
     background-color: var(--naranja);
+}
+
+.stars{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    z-index: -1;
 }
 
 @media(min-width: 768px) {
