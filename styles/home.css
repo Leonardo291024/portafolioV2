@@ -116,22 +116,124 @@ header{
     padding: 100px 70px;
 }
 
-.container-banner h3{
-    color: rgb(166, 166, 166);
-    font-size: 50px;
-    height: 10px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    
+.container-banner .textContainer-hello{
+    font-size: 3rem;
+    font-weight: bold;
+    opacity: 1;
 }
 
-.container-banner h2{
-    color: var(--blanco-1);
-    font-size: 30px;
+.container-banner .textContainer-hello .letter{
+    color: rgb(166, 166, 166);
+    /*font-size: 50px;*/
     height: 10px;
     font-family: 'Roboto', sans-serif;
-    font-weight: 500;
+    /*font-weight: 500;*/
+    animation: fadeIn 1s forwards;
+    opacity: 0;
 }
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes showText {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 1;
+    }
+    75% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  .container-banner .textContainer-hello .letter:nth-child(1) {
+    animation-delay: 0.5s;
+  }
+  
+  .container-banner .textContainer-hello .letter:nth-child(2) {
+    animation-delay: 1s;
+  }
+  
+  .container-banner .textContainer-hello .letter:nth-child(3) {
+    animation-delay: 1.5s;
+  }
+  
+  .container-banner .textContainer-hello .letter:nth-child(4) {
+    animation-delay: 2s;
+  }
+
+  .container-banner .textContainer-hello .letter:nth-child(5) {
+    animation-delay: 2.5s;
+  }
+
+
+.container-banner .textContainer-world{
+    font-size: 2rem;
+    font-weight: 500;
+    opacity: 1;   
+    color: var(--blanco-1);
+    font-family: 'Roboto', sans-serif;
+    opacity: 1;
+}
+
+.container-banner .textContainer-world .letter{
+    animation: fadeIn 1s forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes showText {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 1;
+    }
+    75% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  .container-banner .textContainer-world .letter:nth-child(1) {
+    animation-delay: 3.0s;
+  }
+  
+  .container-banner .textContainer-world .letter:nth-child(2) {
+    animation-delay: 3.5s;
+  }
+  
+  .container-banner .textContainer-world .letter:nth-child(3) {
+    animation-delay: 4.0s;
+  }
+  
+  .container-banner .textContainer-world .letter:nth-child(4) {
+    animation-delay: 4.5s;
+  }
+
+  .container-banner .textContainer-world .letter:nth-child(5) {
+    animation-delay: 5.0s;
+  }
 
 #parpadeo{
     animation: parpadeo 0.3s infinite alternate;
@@ -144,13 +246,6 @@ header{
         100%{
             opacity: 0;
         }
-}
-
-.container-banner h1{
-    color: var(--blanco-1);
-    font-size: 30px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
 }
 
 .container-banner .button-contact{
@@ -186,36 +281,8 @@ header{
 
 
 /*----------------------SOBRE MI------------*/
-main{
-    position: static;
-    /*width: 100%;*/
-    /*height: 100%;*/
-    z-index: -1;
-}
-
-main::before{
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 20%;
-  width: 8px;
-  height: 8px;
-  background: transparent;
-  box-shadow: 200px 200px white, 100px 300px white, 400px 100px white, 600px 300px white, 800px 200px white, 700px 500px white, 500px 600px white, 300px 700px white, 100px 800px white;
-  animation: animateStars 10s linear infinite;
-  border-radius: 50%;
-}
-
-@keyframes animateStars {
-    0% {
-      transform: translateY(0);
-    }
-    100% {
-      transform: translateY(-1000px);
-    }
-}
 .sobreMi{
-    padding: 63px 20px;
+    padding: 110px 20px;
     background-color: var(--negro-1);
 }
 
@@ -285,16 +352,6 @@ main::before{
 .container-links-redes a:hover{
     transform: scale(1.1);
     background-color: var(--naranja);
-}
-
-.stars{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: black;
-    z-index: -1;
 }
 
 @media(min-width: 768px) {
@@ -377,7 +434,7 @@ main::before{
     
     /*---------------SOBRE MI-----------------*/
     .sobreMi{
-        padding: 50px 100px;
+        padding: 210px 100px;
     }
     
     .sobreMi h1{
