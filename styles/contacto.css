@@ -1,8 +1,8 @@
 :root{
     --naranja: #E6521C;
-    --negro-1: rgb(34, 34, 34);
+    --negro-1: #000524;
     --negro-2: rgb(0, 0, 0);
-    --negro-banner: rgb(19, 19, 19);
+    --negro-banner: #020f59;
     --blanco-1: rgb(255, 255, 255)
 }
 
@@ -14,132 +14,77 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-header{
-    padding: 20px 20px;
-}
-
-.container-grid-contact{
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-}
-
-.container-form{
-    padding: 20px 30px
-}
-
-.container-form h1{
-    color: var(--naranja);
-    font-size: 45px;
-}
-
-.container-form form{
+main{
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    padding: 20px;
 }
 
-.container-form label{
+.container {
+    width: 640px;
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-image: url('../assets/planeta-fondo.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    mask-image: linear-gradient(black 90%, transparent);
+}
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.social-links a {
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: none;
     color: var(--blanco-1);
-    margin-top: 15px;
-    font-size: 25px;
 }
-
-.container-form input{
-    width: 100%;
-    height: 40px;
-    max-width: 430px;
-    border-radius: 10px;
-    border: none;
-    background-color: lightslategray;
+.social-links a:last-child {
+    margin-right: 0;
 }
-
-.container-form textarea{
+.social-links a:hover{
+    color: var(--naranja);
+}
+form {
+    padding: 20px;
+    border-radius: 8px;
+}
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: var(--naranja);
+}
+form input[type="text"],
+form input[type="email"],
+form textarea {
     width: 100%;
-    height: 80px;
-    max-width: 430px;
-    border-radius: 10px;
-    border: none;
+    padding: 10px;
     margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background: transparent;
+    color: var(--blanco-1);
+}
+form textarea {
+    height: 100px;
+}
+form input[type="submit"] {
+    background-color: var(--naranja);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+form input[type="submit"]:hover {
+    background-color: var(--negro-banner);
 }
 
-.container-form button{
-   width: 90%;
-   height: 30px;
-   max-width: 430px;
-   margin: 0 auto;
-   background-color: var(--negro-2);
-   color: var(--naranja);
-   border: none;
-   font-weight: 700;
-}
-
-.container-info{
-    display: none;
-}
-
-
-@media(min-width: 760px){
-    
-    .container-main-contact{
-        padding: 20px 30px;
-    }
-    
-    .container-grid-contact{
-        grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
-    }
-
-    .container-form button{
-        margin: 0;
-    }
-
-    .container-info{
-        display: block;
-        background-color: var(--naranja);
-        box-shadow: 0 4px 8px var(--negro-2);
-        max-width: 520px;
-    }
-    
-    .container-info h2{
-        font-size: 40px;
-        font-family: 'Roboto', sans-serif;
-    }
-    
-    .container-info{
-        padding: 20px 20px;
-        box-sizing: border-box;
-    }
-    
-    .info{
-        display: flex;
-        align-items: center;
-        margin-bottom: 15px;
-        font-size: 20px;
-        font-weight: bold;
-        color: darkgray;
-    }
-    
-    .info img{
-        width: 40px;
-        margin-right: 10px;
-    }
-    
-    .container-links-redes-contact{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        justify-items: stretch;
-        margin-top: 100px;
-    }
-    
-    .container-links-redes-contact li{
-        list-style: none;
-        transition: 0.3s;
-    }
-
-    .container-links-redes-contact li:hover{
-        transform: scale(1.1);
-    }
-    
-    
-    
-}
