@@ -31,9 +31,9 @@
 }
 
 .seccion-proyectos .container-cards-grid .card{
-     background-color: var(--negro-1);
+     background-color: var(--negro-2);
      border-radius: 8px;
-     box-shadow: 0 4px 8px var(--negro-2);
+     box-shadow: 0 4px 8px rgb(89 89 89);
      transition: 0.3s;
      overflow: hidden;
      cursor: pointer;
@@ -58,7 +58,7 @@
 .container-cards-grid .card .repositorio{
     border: 1px solid var(--naranja);
     color: var(--blanco-1);
-    background-color: var(--negro-1);
+    background-color: var(--negro-banner);
     margin-right: 10px;
 }
 
