@@ -268,7 +268,7 @@ header{
 
 .imagen-perfil{
     position: absolute;
-    top: 406px;
+    top: 360px;
     left: calc(50% - 70px);
 }
 
@@ -282,7 +282,7 @@ header{
 
 /*----------------------SOBRE MI------------*/
 .sobreMi{
-    padding: 110px 20px;
+    padding: 75px 0 0 20px;
     background-color: var(--negro-1);
 }
 
@@ -352,6 +352,58 @@ header{
 .container-links-redes a:hover{
     transform: scale(1.1);
     background-color: var(--naranja);
+}
+
+.proyecto-relevante{
+    padding: 20px 20px;
+}
+
+.proyecto-relevante h1{
+    color: var(--blanco-1);
+    text-align: center;
+}
+
+.proyecto-relevante .container-relevante{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap: 20px;
+}
+
+.proyecto-relevante .relevante-img img{
+    width: 100%;
+}
+
+.proyecto-relevante .relevante-descripcion .descripcion{
+    color: var(--blanco-1);
+}
+
+.proyecto-relevante .relevante-descripcion{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.proyecto-relevante .relevante-descripcion .buttons-descripcion{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.proyecto-relevante .relevante-descripcion .buttons-descripcion a{
+    text-decoration: none;
+    font-weight: 600;
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--naranja);
+    color: var(--negro-1);
+    display: inline-block;
+}
+
+.proyecto-relevante .relevante-descripcion .buttons-descripcion a:hover{
+    background-color: var(--blanco-1);
 }
 
 @media(min-width: 768px) {
@@ -424,8 +476,8 @@ header{
     }
     
     .imagen-perfil{
-        top: 520px;
-        left: calc(50% - 90px);
+        top: 367px;
+        left: calc(50% - 50px);
     }
     
     .imagen-perfil img{
@@ -434,7 +486,7 @@ header{
     
     /*---------------SOBRE MI-----------------*/
     .sobreMi{
-        padding: 210px 100px;
+        padding: 55px 0 20px 100px;
     }
     
     .sobreMi h1{
@@ -443,6 +495,10 @@ header{
     
     .container-links-redes{
         justify-content: center;
+    }
+
+    .proyecto-relevante .container-relevante{
+        grid-template-columns: 1fr 1fr;
     }
     
     
