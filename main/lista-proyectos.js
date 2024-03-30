@@ -14,6 +14,16 @@
 
 const proyectosHtmlCssList = [];
 proyectosHtmlCssList.push({
+    name: "Huddle",
+    image: './assets/imgsProyects/huddle-landingPage.jpg',
+    readme: "Primer proyecto de una Landing page de Huddle hecha con Tailwind css.",
+    web: 'https://leonardo291024.github.io/Huddle_landing_page3/',
+    repositorio: 'https://github.com/Leonardo291024/Huddle_landing_page3',
+    iconoHtml: './assets/icons/icons8-html-48.png',
+    iconoCss: './assets/icons/icono-tailwind.png',
+    iconoJs: ''
+});
+proyectosHtmlCssList.push({
     name: "To Do List",
     image: './assets/imgsProyects/todoListjpg.jpg',
     readme: "Agrega tareas automaticamente con la opcion de poder borrar una ves que una de las tareas la hayas completado.",
