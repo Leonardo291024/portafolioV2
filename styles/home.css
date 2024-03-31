@@ -27,6 +27,13 @@ ul{
     position: fixed;
     top: 90%;
     left: 85%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.icono-watts:hover{
+    transform: scale(1.1);
+    width: 50px;
 }
 /*---------------ESTILOS HEADER*------------------------*/
 .baner{
