@@ -131,7 +131,7 @@ header{
 }
 
 .container-banner .textContainer-hello{
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: bold;
     opacity: 1;
 }
@@ -192,7 +192,7 @@ header{
 
 
 .container-banner .textContainer-world{
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: 500;
     opacity: 1;   
     color: var(--blanco-1);
@@ -296,7 +296,7 @@ header{
 
 /*----------------------SOBRE MI------------*/
 .sobreMi{
-    padding: 75px 0 0 20px;
+    padding: 104px 10px 0px 10px;
     background-color: var(--negro-1);
 }
 
@@ -500,7 +500,7 @@ header{
     
     /*---------------SOBRE MI-----------------*/
     .sobreMi{
-        padding: 55px 0 20px 100px;
+        padding: 83px 0 20px 100px;
     }
     
     .sobreMi h1{
