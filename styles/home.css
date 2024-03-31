@@ -12,6 +12,7 @@ body{
         box-sizing: border-box;
         background-color: var(--negro-1);
         font-family: 'Roboto', sans-serif;
+        position: relative;
 }
 
 ul{
@@ -20,6 +21,12 @@ ul{
 
 .inactive{
     display: none;
+}
+
+.icono-watts{
+    position: fixed;
+    top: 90%;
+    left: 85%;
 }
 /*---------------ESTILOS HEADER*------------------------*/
 .baner{
