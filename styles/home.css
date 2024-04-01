@@ -37,6 +37,7 @@ ul{
 }
 /*---------------ESTILOS HEADER*------------------------*/
 .baner{
+    height: 100vh;
     background-image: url("../assets/planeta-fondo.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -282,7 +283,7 @@ header{
 
 .imagen-perfil{
     position: absolute;
-    top: 360px;
+    top: 406px;
     left: calc(50% - 70px);
 }
 
@@ -296,7 +297,7 @@ header{
 
 /*----------------------SOBRE MI------------*/
 .sobreMi{
-    padding: 104px 10px 0px 10px;
+    padding: 20px 10px 0px 10px;
     background-color: var(--negro-1);
 }
 
@@ -490,12 +491,20 @@ header{
     }
     
     .imagen-perfil{
-        top: 367px;
+        top: 453px;
         left: calc(50% - 50px);
     }
     
     .imagen-perfil img{
         width: 180px;
+    }
+
+    .container-banner .textContainer-hello{
+        font-size: 4rem;
+    }
+
+    .container-banner .textContainer-world{
+        font-size: 2rem;
     }
     
     /*---------------SOBRE MI-----------------*/
