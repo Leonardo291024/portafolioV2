@@ -1,8 +1,8 @@
 :root{
-    --naranja: #E6521C;
-    --negro-1: #000524;
+    --naranja: yellow;
+    --negro-1: #070707;
     --negro-2: rgb(0, 0, 0);
-    --negro-banner: #020f59;
+    --negro-banner: #060607;
     --blanco-1: rgb(255, 255, 255)
 }
 
@@ -35,10 +35,22 @@ ul{
     transform: scale(1.1);
     width: 50px;
 }
+
+.scrollElement{
+    opacity: 1;
+    transform: translateY(60px);
+    transition: opacity 2.5s ease, transform 2.5s ease;
+}
+
+.kraken-title{
+    background: linear-gradient(to top left, var(--naranja), white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 /*---------------ESTILOS HEADER*------------------------*/
 .baner{
     height: 100vh;
-    background-image: url("../assets/planeta-fondo.jpg");
+    background-image: url("../assets/espacio2.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -267,16 +279,16 @@ header{
     display: inline-flex;
     margin-top: 20px;
     background-color: var(--naranja);
-    color: var(--blanco-1);
+    color: var(--negro-2);
     text-decoration: none;
     padding: 5px 5px;
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     transition: 0.3s;
 }
 
 .container-banner .button-contact:hover{
-    background-color: white;
+    background-color: var(--negro-1);
     color: var(--naranja);
     transform: scale(1.1);
 }
@@ -298,7 +310,7 @@ header{
 /*----------------------SOBRE MI------------*/
 .sobreMi{
     padding: 20px 10px 0px 10px;
-    background-color: var(--negro-1);
+    background-color: var(--negro-2);
 }
 
 .sobreMi h1{

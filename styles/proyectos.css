@@ -1,8 +1,8 @@
 :root{
-    --naranja: #E6521C;
-    --negro-1: #000524;
+    --naranja: yellow;
+    --negro-1: #070707;
     --negro-2: rgb(0, 0, 0);
-    --negro-banner: #020f59;
+    --negro-banner: #060607;
     --blanco-1: rgb(255, 255, 255)
 }
 
