@@ -302,8 +302,21 @@ header{
 .imagen-perfil img{
     width: 140px;
     border-radius: 50%;
-    border: 5px solid var(--blanco-1)
+    border: 5px solid var(--blanco-1);
+    animation: floatingIcon 3s infinite 0.4s;
 }
+
+@keyframes floatingIcon {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-9px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
 
 
 
