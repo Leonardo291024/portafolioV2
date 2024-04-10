@@ -113,13 +113,4 @@ proyectosHtmlCssList.push({
     iconoCss: './assets/icons/icons8-css-48.png',
     iconoJs: './assets/icons/icons8-javascript-48.png'
 });
-proyectosHtmlCssList.push({
-    name: "E-comerce",
-    image: './assets/imgsProyects/tienda-empeno.jpg',
-    readme: "Proyecto personal de un sitio web sobre una casa de empeño",
-    web: 'https://leonardo291024.github.io/casa-de-empe-o/',
-    repositorio: 'https://github.com/Leonardo291024/casa-de-empe-o',
-    iconoHtml: './assets/icons/icons8-html-48.png',
-    iconoCss: './assets/icons/icons8-css-48.png',
-    iconoJs: './assets/icons/icons8-javascript-48.png'
-});
+
