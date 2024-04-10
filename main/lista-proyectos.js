@@ -14,6 +14,16 @@
 
 const proyectosHtmlCssList = [];
 proyectosHtmlCssList.push({
+    name: "Ping Pong game",
+    image: './assets/imgsProyects/pin_pong.jpg',
+    readme: "Este proyecto fue realizado para demostrar mis habilidades con javascript y canvas, temas vistos en el curso de Platzi Taller practico de javascript: crea tu primer viddeojuego",
+    web: 'https://leonardo291024.github.io/Ping_Pong-game/',
+    repositorio: 'https://github.com/Leonardo291024/Ping_Pong-game',
+    iconoHtml: './assets/icons/icons8-html-48.png',
+    iconoCss: '',
+    iconoJs: './assets/icons/icons8-javascript-48.png'
+});
+proyectosHtmlCssList.push({
     name: "Huddle",
     image: './assets/imgsProyects/huddle-landingPage.jpg',
     readme: "Primer proyecto de una Landing page de Huddle hecha con Tailwind css.",
